@@ -236,7 +236,14 @@ footer { background: var(--dark); border-top: 1px solid var(--border); padding: 
   width: 100%; background: rgba(201,168,76,0.04); border: 1px solid var(--border);
   color: var(--text); font-family: 'Raleway', sans-serif; font-size: 0.88rem;
   padding: 0.7rem 0.95rem; border-radius: 2px; outline: none; transition: border-color 0.3s;
+}
+.form-field select {
   -webkit-appearance: none; appearance: none;
+}
+.form-field input[type="date"]::-webkit-calendar-picker-indicator,
+.form-field input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.7) sepia(1) saturate(2) hue-rotate(5deg);
+  cursor: pointer;
 }
 .form-field input:focus, .form-field textarea:focus, .form-field select:focus { border-color: var(--gold); }
 .form-field textarea { min-height: 95px; resize: vertical; }
